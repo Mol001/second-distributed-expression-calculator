@@ -673,7 +673,6 @@ func checkArithmeticExpression(s string) bool {
 
 // разбивка полученного выражения на части, которые будут отсылаться агентам
 func parseExpr(expr string, ri int) (map_expr map[int][][]string, err string) {
-	fmt.Println(expr, ri)
 	operation_list := make(map[int][][]string, 0)
 	expr2 := splitExpression(expr)
 	midl_sl := [][]string{}
@@ -940,7 +939,6 @@ func parseExpr(expr string, ri int) (map_expr map[int][][]string, err string) {
 		}
 	}
 	operation_list[ri] = midl_sl
-	fmt.Println(operation_list)
 	return operation_list, "200. Выражение успешно принято, распаршено и принято к обработке"
 }
 
@@ -1019,7 +1017,6 @@ func AddIdToDB(db *sql.DB, key, id string) error {
 	ids := strings.Split(old_id, ";")
 	ids = append(ids, id)
 	new_id := strings.Join(ids, ";")
-	fmt.Println(new_id)
 	// Если ключ существует, обновляем значение
 	if exists {
 		_, err = db.Exec("UPDATE kv SET id=? WHERE key=?", new_id, key)
