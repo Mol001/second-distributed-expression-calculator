@@ -2,6 +2,7 @@
 Для запуска необходимо скопировать все файлы на устройство
 
 Для работы с сервером необходимо:
+
 1/Запустить main1.go, убедившись в том, что все файлы скачаны.
 
 2/Вбить в поисковую строку localhost:8082/api/v1/register?login=userLogin&password=userPassword, получить в ответ OK в случае упеха, после чего вбить localhost:8082/api/v1/login?login=userLogin&password=userPassword, получить в ответ токен в случае упеха (userLogin и userPassword - пример).
