@@ -1,6 +1,13 @@
 # second-distributed-expression-calculator
 Для запуска необходимо скопировать все файлы на устройство
 
+Возможно понадобится установить через go get следующее:
+
+"github.com/form3tech-oss/jwt-go"
+"golang.org/x/exp/slices"
+"database/sql"
+_ "github.com/mattn/go-sqlite3"
+
 Для работы с сервером необходимо:
 
 1/Запустить main1.go, убедившись в том, что все файлы скачаны.
