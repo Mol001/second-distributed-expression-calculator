@@ -694,7 +694,6 @@ func parseExpr(expr string, ri int) (map_expr map[int][][]string, err string) {
 					sr = append(sr, expr2[i-1])
 					sr = append(sr, expr2[i])
 					sr = append(sr, expr2[i+1])
-					fmt.Println(123, sr)
 					used_index = append(used_index, strconv.Itoa(i-1), "op"+strconv.Itoa(k))
 					used_index = append(used_index, strconv.Itoa(i), "op"+strconv.Itoa(k))
 					used_index = append(used_index, strconv.Itoa(i+1), "op"+strconv.Itoa(k))
